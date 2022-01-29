@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="no-js" lang="" ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Eduplana - Education data Analysis and Insights</title>
+    <!-- <base href="/" /> -->
+    <!--add back on production -->
+
+    <meta name="description" content="Eduplana is a civic tech organization that uses data to advocate for quality education in Nigeria" />
+    <meta name="keywords" content="Education, NGO, NIgeria, Donation" />
+    <meta name="author" content="Eduplana" />
+    <link rel="canonical" href="https://www.eduplana.com" />
+    <meta name="robots" content="index" />
+
+    <meta property="og:url" content="https://www.eduplana.com" />
+    <meta property="og:image" content="https://www.eduplana.com/favicon.png" />
+    <meta property="og:image:width" content="90" />
+    <meta property="og:image:height" content="76" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eduplana" />
+    <meta property="og:site_name" content="Eduplana" />
+    <meta property="og:description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="https://www.eduplana.com/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="assets/floating-whatsapp/floating-wpp.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body ng-controller="generalController">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <div class="header-wrap">
+            <div class="header-wrap--logo-section">
+              <a ui-sref="home"
+                ><img
+                  src="https://www.eduplana.com/images/logo.png"
+                  alt="eduplana-logo"
+              /></a>
+            </div>
+            <div class="header-wrap--link-section">
+              <ul>
+                <li class="hide-on-mobile" ng-class="{ current: isActive('/')}">
+                  <a ui-sref="home">Home</a>
+                </li>
+                <li
+                  class="hide-on-mobile"
+                  ng-class="{ current: isActive('/about')}"
+                >
+                  <a ui-sref="aboutus">About us</a>
+                </li>
+                <li
+                  class="hide-on-mobile"
+                  ng-class="{ current: isActive('/documents')}"
+                >
+                  <a ui-sref="documents">Documents</a>
+                </li>
+                <li
+                  class="hide-on-mobile"
+                  ng-class="{ current: isActive('/infographics')}"
+                >
+                  <a ui-sref="infographics">Infographics</a>
+                </li>
+                <li
+                  class="hide-on-mobile"
+                  ng-class="{ current: isActive('/data')}"
+                >
+                  <a ui-sref="data">Data</a>
+                </li>
+                <li class="bugger-menu hide-on-desktop">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="mobile-header">
+        <div class="title">
+          <img src="images/Close1.svg" alt="" />
+        </div>
+        <ul>
+          <li ng-class="{ current: isActive('/')}">
+            <a ui-sref="home">Home</a>
+          </li>
+          <li ng-class="{ current: isActive('/about')}">
+            <a ui-sref="aboutus">About us</a>
+          </li>
+          <li ng-class="{ current: isActive('/documents')}">
+            <a ui-sref="documents">Documents</a>
+          </li>
+          <li ng-class="{ current: isActive('/infographics')}">
+            <a ui-sref="infographics">Infographics</a>
+          </li>
+          <li ng-class="{ current: isActive('/data')}">
+            <a ui-sref="data">Data</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="main">
+        <div ui-view></div>
+      </div>
+
+      <div class="space"></div>
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="wrap">
+            <div class="copy">
+              Copyright © <span id="year"></span><span id="year"></span> All
+              rights reserved.
+            </div>
+            <div class="social">
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Eduplana-Nigeria-787498974684285"
+                    ><img src="images/Facebook.svg" alt=""
+                  /></a>
+                </li>
+                <!-- <li>
+                  <a target="_blank" href=""
+                    ><img src="images/Instagram.svg" alt=""
+                  /></a>
+                </li> -->
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/eduplana_ng"
+                    ><img src="images/Twitter.svg" alt=""
+                  /></a>
+                </li>
+                <!-- <li>
+                  <a target="_blank" href=""
+                    ><img src="images/LinkedIN.svg" alt=""
+                  /></a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- <div id="myDiv"></div> -->
+
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="assets/js/angularjs/angular.min.js"></script>
+    <script src="assets/js/angularjs/angular-animate.js"></script>
+    <script src="assets/js/angularjs/angular-ui-router.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllers/generalController.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/floating-whatsapp/floating-wpp.min.js"></script>
+
+    <script>
+      document.getElementById('year').innerHTML = new Date().getFullYear();
+
+      $('.bugger-menu ').click(function () {
+        $('.mobile-header').toggle();
+      });
+
+      $('.mobile-header .title ').click(function () {
+        $('.mobile-header').toggle();
+      });
+
+      $('.mobile-header ul li ').click(function () {
+        $('.mobile-header').toggle();
+      });
+
+      // $(function () {
+      //   $('#myDiv').floatingWhatsApp({
+      //     phone: '2349134442145',
+      //     popupMessage: 'Hello, how can we help you?',
+      //     showPopup: true,
+      //     showOnIE: false
+      //   });
+      // });
+    </script>
+  </body>
+</html>
