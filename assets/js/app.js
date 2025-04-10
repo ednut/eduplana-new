@@ -25,7 +25,7 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
 
     .state('aboutus', {
       url: '/about',
-      templateUrl: 'partials/aboutUS.html'
+      templateUrl: 'partials/about.html'
     })
 
     .state('documents', {
