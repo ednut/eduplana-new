@@ -38,6 +38,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'partials/infographics.html'
     })
 
+    .state('private-schools', {
+      url: '/private-schools',
+      templateUrl: 'partials/private-schools.html'
+    })
+
     .state('data', {
       url: '/data',
       templateUrl: 'partials/data.html'
