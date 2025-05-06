@@ -43,9 +43,9 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'partials/private-schools.html'
     })
 
-    .state('school-compare', {
-      url: '/school-compare',
-      templateUrl: 'partials/school-compare.html'
+    .state('school-campaign', {
+      url: '/school-campaign',
+      templateUrl: 'partials/school-campaign.html'
     })
 
     .state('data', {
